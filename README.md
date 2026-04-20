@@ -21,6 +21,7 @@ une adaptation fine et locale aux variations de distribution.
 
 - Maksym DOLHOV
 - Fallou DIOUF
+  
 **Superviseurs**
 
 - Ayoub Karine (ayoub.karine@u-paris.fr)
