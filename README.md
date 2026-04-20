@@ -21,14 +21,17 @@ une adaptation fine et locale aux variations de distribution.
 ![Schéma](docs/images/contexte.png)
 
 ## Références
-[1] Sun, Yu, Xiaolong Wang, Zhuang Liu, John Miller, Alexei Efros, and Moritz Hardt. **"Test-time training with self-supervision for
+**[1]** Sun, Yu, Xiaolong Wang, Zhuang Liu, John Miller, Alexei Efros, and Moritz Hardt. **"Test-time training with self-supervision for
 generalization under distribution shifts."** In International conference on machine learning, pp. 9229-9248. PMLR, 2020.
-[2] Liu, Yuejiang, Parth Kothari, Bastien Van Delft, Baptiste Bellot-Gurlet, Taylor Mordan, and Alexandre Alahi. "TTT++: When does
-self-supervised test-time training fail or thrive?." Advances in Neural Information Processing Systems 34 (2021): 21808-21820.
-[3] Han, Jisu, Jihee Park, Dongyoon Han, and Wonjun Hwang. "When Test-Time Adaptation Meets Self-Supervised Models." arXiv
+
+**[2]** Liu, Yuejiang, Parth Kothari, Bastien Van Delft, Baptiste Bellot-Gurlet, Taylor Mordan, and Alexandre Alahi. **"TTT++: When does
+self-supervised test-time training fail or thrive?."** Advances in Neural Information Processing Systems 34 (2021): 21808-21820.
+
+**[3]** Han, Jisu, Jihee Park, Dongyoon Han, and Wonjun Hwang. **"When Test-Time Adaptation Meets Self-Supervised Models."** arXiv
 preprint arXiv:2506.23529 (2025).
-[4] Mirza, Muhammad Jehanzeb, Pol Jané Soneira, Wei Lin, Mateusz Kozinski, Horst Possegger, and Horst Bischof. "Actmad: Activation
-matching to align distributions for test-time-training." In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
+
+**[4]** Mirza, Muhammad Jehanzeb, Pol Jané Soneira, Wei Lin, Mateusz Kozinski, Horst Possegger, and Horst Bischof. **"Actmad: Activation
+matching to align distributions for test-time-training."** In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
 Recognition, pp. 24152-24161. 2023.
 ## Equipe de projet et supervisor
 **Étudiants**
