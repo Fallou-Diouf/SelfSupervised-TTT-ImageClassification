@@ -16,6 +16,7 @@ d’adaptation au moment du test, au cours de laquelle le modèle est optimisé 
 de test, sans accès aux annotations, afin d’adapter le modèle aux conditions réelles d’inférence. Plus
 précisément, le modèle d’apprentissage sera adapté individuellement à chaque image de test garantissant
 une adaptation fine et locale aux variations de distribution.
+![Schéma](docs/images/contexte.png)
 ## Equipe de projet et supervisor
 **Étudiants**
 
