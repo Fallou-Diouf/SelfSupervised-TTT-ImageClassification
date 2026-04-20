@@ -1,7 +1,6 @@
 # SelfSupervised-TTT-ImageClassification
 TER pour le deuxième semestre du M1 VMI.
 ## Contexte 
-Ce dépôt est le projet TER pour le deuxième semestre du M1 VMI.
 L’apprentissage auto-supervisé vise à apprendre des représentations générales à partir de grandes
 quantités de données non annotées. On considérera les images dans ce projet. Ces représentations sont
 ensuite spécialisées pour des tâches downstream au moyen d’un fine-tuning supervisé. Dans ce cadre, trois
