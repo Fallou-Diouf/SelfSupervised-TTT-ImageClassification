@@ -27,3 +27,11 @@ une adaptation fine et locale aux variations de distribution.
 - Ayoub Karine (ayoub.karine@u-paris.fr)
 - Camille Kurtz (camille.kurtz@u-paris.fr)
 - Laurent Wendling (Laurent.Wendling@u-paris.fr)
+## Objectif principal
+Construisez et évaluez un pipeline complet basé sur :
+
+-SimCLR pour la pré-formation auto-supervisée
+-ViT comme colonne vertébrale de l’encodeur
+-CIFAR-10 comme référence principale à petite échelle
+-CIFAR-10-C comme référence de test décalé pour la robustesse et l’analyse TTT
+-TTT pour l’adaptation en ligne pendant l’inférence
