@@ -1,0 +1,75 @@
+# Smoke-test config — exercises the full pipeline end-to-end in a few minutes.
+# Use it to verify code paths (data, AMP, scheduler, Sun 2020 TTT, CSV dump)
+# before committing GPU time to default.yaml.
+
+experiment:
+  name: "smoke-test"
+  seed: 42
+
+data:
+  dataset: "cifar10"
+  data_root: "./data"
+  image_size: 32
+  num_workers: 2
+  batch_size_ssl: 256
+  batch_size_sup: 128
+  val_fraction: 0.1
+  augment_supervised: true
+  randaugment_n: 2
+  randaugment_m: 9
+
+model:
+  backbone: "vit_tiny"
+  patch_size: 4
+  embed_dim: 192
+  projection_dim: 128
+  drop_path_rate: 0.0
+
+simclr:
+  epochs: 2
+  temperature: 0.2
+  learning_rate: 0.001
+  weight_decay: 1.0e-4
+  warmup_epochs: 0
+  use_amp: true
+  log_every_n_steps: 50
+
+linear_probe:
+  epochs: 2
+  learning_rate: 0.1
+  weight_decay: 0.0
+  warmup_epochs: 0
+  use_amp: true
+
+finetune:
+  epochs: 2
+  learning_rate: 5.0e-4
+  weight_decay: 0.05
+  warmup_epochs: 0
+  label_smoothing: 0.1
+  use_amp: true
+  early_stopping_patience: 10
+
+
+ttt:
+  # Sun 2020 TTT (rotation auxiliary): per-image / per-batch self-supervised
+  # adaptation matching TER2.pdf instructions.
+  enabled: true
+  method: "sun2020"
+  steps: 1
+  learning_rate: 1.0e-3
+  adapt_scope: "encoder_plus_head"
+  lambda_rot: 1.0
+  rotation_mode: "rand"
+  # Smoke values — exercise both eval paths cheaply.
+  eval_mode: "both"
+  per_image_aug_k: 4
+  per_image_subsample: 32
+
+logging:
+  use_wandb: false
+  log_dir: "./logs"
+
+checkpoint:
+  dir: "./checkpoints"
+  save_best_only: true
